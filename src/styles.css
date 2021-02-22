@@ -11,8 +11,8 @@ body {
 
 .weather-card {
   display: block;
-  padding-top: 10px;
   margin: 40px auto;
+  margin-top: 50px;
   padding: 30px;
   border-radius: 15px;
   border: solid 2px #df7861;
@@ -25,8 +25,8 @@ body {
 
 .LOGO {
   display: block;
-  height: 80px;
-  width: 640px;
+  height: 70px;
+  width: 650px;
   position: fixed;
   background: rgb(251, 248, 232, 0.8);
   padding: 10px;
@@ -155,9 +155,6 @@ a:hover {
   color: #df7861;
 }
 
-.next_days {
-  display: block;
-  margin: 5px auto;
-  margin-left: 25px;
+#forecast {
   text-align: center;
 }
