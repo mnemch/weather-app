@@ -9,11 +9,14 @@ body {
   width: 100%;
 }
 
+.row {
+  --bs-gutter-x: 1.2rem;
+}
 .weather-card {
   display: block;
   margin: 40px auto;
   margin-top: 50px;
-  padding: 30px;
+  padding: 20px 15px;
   border-radius: 15px;
   border: solid 2px #df7861;
   font-family: "Lora", serif;
@@ -135,7 +138,6 @@ a:hover {
 
 .number-of-degrees {
   font-size: 50px;
-  font-weight: 100;
 }
 
 .celsius-and-farenheit {
