@@ -94,8 +94,11 @@ function Coordinates(position) {
   let apikey = "eb1733f56daae1f8c299ea8db424ea64";
   let units = "metric";
   let apiUrl = `${api}lat=${lat}&lon=${lon}&appid=${apikey}&units=${units}`;
-
   axios.get(apiUrl).then(displayTemperature);
+
+  let apifor = "https://api.openweathermap.org/data/2.5/forecast?";
+  apiUrl = `${apifor}lat=${lat}&lon=${lon}&appid=${apikey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
 }
 //
 function handleSubmit(event) {
