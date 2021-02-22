@@ -57,6 +57,10 @@ h3 {
   font-weight: 100%;
   color: #1a1918;
 }
+#description {
+  margin-left: 30px;
+}
+
 p {
   color: #1a1918;
   line-height: 1.5;
