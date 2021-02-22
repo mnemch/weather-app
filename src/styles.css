@@ -12,7 +12,7 @@ body {
 .weather-card {
   display: block;
   padding-top: 10px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 30px;
   border-radius: 15px;
   border: solid 2px #df7861;
@@ -26,7 +26,7 @@ body {
 .LOGO {
   display: block;
   height: 80px;
-  width: 660px;
+  width: 640px;
   position: fixed;
   background: rgb(251, 248, 232, 0.8);
   padding: 10px;
@@ -72,7 +72,7 @@ p {
 }
 
 iframe {
-  width: 450px;
+  width: 480px;
   height: 300px;
   float: right;
 }
