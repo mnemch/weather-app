@@ -70,6 +70,13 @@ p {
   height: 30%%;
   float: right;
 }
+
+iframe {
+  width: 490px;
+  height: 300px;
+  float: right;
+}
+
 .gm-style-iw {
   text-align: center;
 }
