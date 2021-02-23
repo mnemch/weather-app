@@ -1,13 +1,13 @@
 //current  time day
 function currentDate(time) {
   let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+    "El domingo",
+    "El lunes",
+    "El martes",
+    "El miércoles",
+    "El jueves",
+    "El viernes",
+    "El sábado"
   ];
   let day = days[time.getDay()];
   let hour = (time.getHours() < 10 ? "0" : "") + time.getHours();
@@ -78,11 +78,11 @@ function search(city) {
   let apikey = "eb1733f56daae1f8c299ea8db424ea64";
   let api = "https://api.openweathermap.org/data/2.5/weather?";
   let units = "metric";
-  let apiUrl = `${api}q=${city}&appid=${apikey}&units=${units}`;
+  let apiUrl = `${api}q=${city}&appid=${apikey}&units=${units}&lang=sp`;
   axios.get(apiUrl).then(displayTemperature);
 
   let apifor = "https://api.openweathermap.org/data/2.5/forecast?";
-  apiUrl = `${apifor}q=${city}&appid=${apikey}&units=metric`;
+  apiUrl = `${apifor}q=${city}&appid=${apikey}&units=metric&lang=sp`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -93,11 +93,11 @@ function Coordinates(position) {
   let api = "https://api.openweathermap.org/data/2.5/weather?";
   let apikey = "eb1733f56daae1f8c299ea8db424ea64";
   let units = "metric";
-  let apiUrl = `${api}lat=${lat}&lon=${lon}&appid=${apikey}&units=${units}`;
+  let apiUrl = `${api}lat=${lat}&lon=${lon}&appid=${apikey}&units=${units}&lang=sp`;
   axios.get(apiUrl).then(displayTemperature);
 
   let apifor = "https://api.openweathermap.org/data/2.5/forecast?";
-  apiUrl = `${apifor}lat=${lat}&lon=${lon}&appid=${apikey}&units=${units}`;
+  apiUrl = `${apifor}lat=${lat}&lon=${lon}&appid=${apikey}&units=${units}&lang=sp`;
   axios.get(apiUrl).then(displayForecast);
 }
 //
@@ -304,11 +304,16 @@ var resetData = function () {
 google.maps.event.addDomListener(window, "load", initialize);
 
 //laguage 
-// function translateDescription(description) {
-//     var xhttp = new XMLHttpRequest();
-//     xhttp.open("GET", "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=pt&dt=t&q=" + description, false);
-//     xhttp.send();
-//     var response = JSON.parse(xhttp.responseText);
-//     return response[0][0][0];
+// var language; 
+// function getLanguage() {
+// (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+// $.ajax({ 
+// url:  '/language/' +  localStorage.getItem('language') + '.json', 
+// dataType: 'json', async: false, dataType: 'json', 
+// success: function (lang) { language = lang } });
+// }
+
+// function setLanguage(lang) {
+// localStorage.setItem('language', lang);
 // }
 

@@ -17,7 +17,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtfAo4CZR_uGa2iRd5ItItArqZgFNxth4&callback=initMap"
         type="text/javascript"></script>
 
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/ps.css" />
 </head>
 <style></style>
 
@@ -33,7 +33,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="mycurrent-location">
-                            My <i class="fas fa-location-arrow"></i></a>
+                            Mi <i class="fas fa-location-arrow"></i></a>
                     </li>
 
                     <form class="form-inline" id="search-form">
@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-outline-success" type="submit" class="submit_button">
-                                    Search
+                                    Buscar
                                 </button>
                             </div>
                         </div>
@@ -56,9 +56,9 @@
     <br />
     <div class="container">
         <div class="weather-card"><iframe
-                src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temp_new&lat=51.477928&lon=-0.001545&zoom=5&lang=en"
+                src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temp_new&lat=51.477928&lon=-0.001545&zoom=5&lang=fr"
                 frameborder="0" style="border: 0;"></iframe>
-            <div id="map-canvas"></div>
+                <div id="map-canvas"></div>
             <div class="text-inside-wrapper">
                 <h1 id="city"></h1>
                 <h2 id="currtime"></h2>
@@ -79,16 +79,15 @@
                     <div class="col-8">
                         <div class="dayinfo">
                             <p>
-                                Humidity: <span id="humidity"></span> %
+                                Humedad: <span id="humidity"></span> %
                                 <br />
-                                Wind: <span id="wind"></span> km/h
+                                Viento: <span id="wind"></span> km/h
                                 <br />
                                 <br />
                             </p>
                         </div>
                     </div>
                 </div>
-
                 <br />
                 <div class="row weather-forecast" class="forecast" id="forecast"></div>
             </div>
@@ -113,18 +112,18 @@
         <div class="language">
             <div id="div1">
                 <a href="https://practical-johnson-7e7b99.netlify.app/" onclick="setLanguage('en')"> 🇬🇧English </a>
-                <a href="sp/sp.html" onclick="setLanguage('es')"> 🇪🇸Español </a>
+                <a href="sp.html" onclick="setLanguage('es')"> 🇪🇸Español </a>
                 <!-- <a href="#" onclick="setLanguage('nl')"> 🇳🇱Nederlands </a>
                 <a href="#" onclick="setLanguage('nl')"> 🇷🇺Pусский </a> -->
             </div>
-            </div>
+        </div>
         <div class="year">
             © 2021
         </div>
     </div>
     </div>
     <script src="https://kit.fontawesome.com/311765f8a2.js" crossorigin="anonymous"></script>
-    <script src="src/index.js"></script>
+    <script src="src/ps.js"></script>
 </body>
 
 </html>
