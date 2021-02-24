@@ -127,7 +127,7 @@ let celsiusTemperature = null;
 
 let currentLocationIcon = document.querySelector("#mycurrent-location");
 currentLocationIcon.addEventListener("click", mycurlocation);
-mycurlocation();
+///mycurlocation();
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
